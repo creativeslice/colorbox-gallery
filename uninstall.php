@@ -11,6 +11,14 @@
 
 // If plugin is not being uninstalled, exit (do nothing)
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+		delete_option('lazyCbox_lazy_delay');
+		delete_option('lazyCbox_enqueue_js');
+		delete_option(	'lazyCbox_enqueue_css');
+		delete_option(	'lazyCbox_use_colorbox');
+		delete_option(	'lazyCbox_use_placeholder');
+		delete_option(	'lazyCbox_max_width' );
+		delete_option(	'lazyCbox_max_height');
+
 	exit;
 }
 
